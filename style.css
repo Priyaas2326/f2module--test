@@ -1,0 +1,145 @@
+
+img {
+  transition: transform 0.5s;
+}
+
+img:hover {
+  transform: scale(1.2);
+}
+
+
+.gallery {
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+
+  form {
+      width: 200px;
+      margin: 10 auto;
+  
+
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    font-style: italic;
+    color: white;
+    padding: 20px;
+    box-shadow: 100 10 10px gray;
+    border: 20px;
+    border-radius: 55px;
+
+  }
+  
+label {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 18px;
+  margin-right: 10px;
+  margin-top: 30px;
+  display: block;
+    
+  }
+  .button{
+  padding: 10px 25px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color:black;
+  background-color: yellow;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin-top: 10px;
+
+}
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);}
+
+  #display {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    padding: 10px;
+    width: 320px;
+    box-shadow: 0 0 10px gray;
+    font-size: 20px;
+    color: white;
+    font-style:unset;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glowing-text 1s ease-in-out infinite alternate;
+    -moz-animation: glowing-text 1s ease-in-out infinite alternate;
+    animation: glowing-text 1s ease-in-out infinite alternate;
+  }
+  @-webkit-keyframes glowing-text {
+    0% {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #2e00e6, 0 0 40px #6300e6, 0 0 50px #c300e6, 0 0 60px #e200e6, 0 0 70px #e600ca;
+  }
+    
+    100% {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+  
+  
+  #dice {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px gray;
+  }
+  
+  
+  #coupon-image {
+  display: none;
+  margin-left: 30%;
+  max-width: 600px;
+  content: url(https://www.luvzilla.com/wp-content/uploads/2021/01/Sample-Congratulatory-Messages-For-New-Appointment.jpg);
+}
+#coupon-image:hover {
+  border: unset;
+  cursor: unset;
+}
+
+#coupon-code {
+  margin: 10px;
+  text-align: center;
+  font-size: large;
+  font-weight: 500;
+}

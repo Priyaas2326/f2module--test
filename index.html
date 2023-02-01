@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--for images-->
+    <div class="gallery">
+        <img src="https://www.freepnglogos.com/uploads/1-number-png/red-circle-1-number-best-cool-funny-4.png" alt="Image 1" id="img1">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/NYCS-bull-trans-2.svg/2048px-NYCS-bull-trans-2.svg.png" alt="Image 2" id="img2">
+        <img src="https://www.pngmart.com/files/14/3-Number-PNG-Transparent-Picture.png" alt="Image 3" id="img3">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/NYCS-bull-trans-4-red.svg/2048px-NYCS-bull-trans-4-red.svg.png" alt="Image 4" id="img4">
+        <div id="coupon" style="display:none;">
+            <p id="coupon-code"></p>
+      </div>
+      
+      <!--for form-->
+      <form id="form" style="display:none;">
+        <label for="name">Name: </label>
+        <input type="text" id="name" required>
+        <label for="email">Email: </label>
+        <input type="email" id="email" required>
+        <label for="username">Username: </label>
+        <input type="text" id="username" required>
+        
+        <button class="button" id="Submit">Submit</button>
+      </form>
+
+      <div id="dice" style="display:none;">
+        <img src="https://static.vecteezy.com/system/resources/previews/006/923/039/original/dice-game-line-icon-set-pipped-dices-toss-from-one-to-six-die-for-casino-craps-table-or-board-games-luck-and-random-choice-illustration-isolated-free-vector.jpg" alt="Dice" id="dice-img">
+        <p id="result"></p>
+      </div>
+      
+      <!--for display-->
+<div id="display" style="display:none;">
+    <p id="display-name"></p>
+    <p id="display-username"></p>
+  </div>
+      
+  <!--coupon-->
+  
+  <div id="coupon"></div>
+<img id="congrats-img" src="congrats.jpg" style="display: none;">
+
+<img id="third-img" onclick="rollDice()" src="dice.jpg">
+<div id="dice-rolls"></div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
